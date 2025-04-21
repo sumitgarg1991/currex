@@ -66,6 +66,8 @@ Add the credentials in your request headers or use Postman/Curl for testing.
   "currency": "EUR"
 }
 ```
+![image](https://github.com/user-attachments/assets/222a5925-e6bc-4d79-8e74-eb9723aa1c50)
+
 
 ### 🔹 Login Endpoint (Demo Only)
 
