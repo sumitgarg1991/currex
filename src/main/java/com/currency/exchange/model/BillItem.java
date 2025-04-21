@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class BillItem {
     private String name;
-    private String category; // e.g., "groceries", "electronics"
+    private String category;
     private double amount;
 }

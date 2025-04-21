@@ -2,9 +2,12 @@ package com.currency.exchange.service;
 
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import com.google.common.cache.*;
+
+import com.google.common.cache.Cache;
+import com.google.common.cache.CacheBuilder;
 
 @Service
 public class ExchangeRateService {

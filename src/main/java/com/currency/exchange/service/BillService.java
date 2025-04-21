@@ -1,10 +1,7 @@
 package com.currency.exchange.service;
 
-import java.util.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.*;
 
 import com.currency.exchange.logic.DiscountCalculator;
 import com.currency.exchange.model.BillItem;
