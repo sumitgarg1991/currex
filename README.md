@@ -57,3 +57,133 @@ Add the credentials in your request headers or use Postman/Curl for testing.
   "originalCurrency": "USD",
   "targetCurrency": "EUR"
 }
+```
+
+**Response:**
+```json
+{
+  "finalAmount": 319.75,
+  "currency": "EUR"
+}
+```
+
+### 🔹 Login Endpoint (Demo Only)
+
+**URL:** `POST /auth/login`
+
+**Body:**
+```json
+{
+  "username": "apiuser",
+  "password": "password123"
+}
+```
+
+**Response:**
+```json
+{
+  "message": "Login successful",
+  "user": "apiuser"
+}
+```
+
+---
+
+## 🧪 Run the App
+
+```bash
+./mvnw spring-boot:run
+```
+
+or (if using installed Maven):
+
+```bash
+mvn spring-boot:run
+```
+
+---
+
+## 🧪 Run Tests
+
+```bash
+mvn test
+```
+
+---
+
+## 📊 Generate Code Coverage Report
+
+This project uses **JaCoCo** to generate code coverage.
+
+```bash
+mvn clean test jacoco:report
+```
+
+Open the report:
+
+```
+target/site/jacoco/index.html
+```
+
+---
+
+## 📈 Static Code Analysis (Optional)
+
+Use the following to run analysis:
+
+```bash
+mvn checkstyle:check
+```
+
+Or configure **SonarQube** and run:
+
+```bash
+mvn clean verify sonar:sonar
+```
+
+---
+
+## 🌐 Exchange Rate API
+
+This project integrates with the following endpoint:
+
+```
+https://open.er-api.com/v6/latest/{base_currency}?apikey=your-api-key
+```
+
+Replace `your-api-key` with your real API key in the `ExchangeRateService.java` or via `application.properties`.
+
+---
+
+## 🧊 Caching
+
+Exchange rates are cached for 1 hour using **Guava CacheBuilder** to reduce API calls and improve performance.
+
+---
+
+## 📂 Project Structure
+
+```
+com.example.currencydiscountapi
+├── controller
+├── service
+├── model
+├── util
+├── config
+└── CurrencyDiscountApiApplication.java
+```
+
+---
+
+## ✅ License
+
+MIT
+
+---
+
+> Built with ❤️ by [Your Name]
+```
+
+---
+
+Let me know if you want a `Dockerfile`, GitHub Actions CI config, or Swagger/OpenAPI doc setup too!
